@@ -1,0 +1,501 @@
+// ***** Import Stuff Here *****
+
+@import "compass";
+
+@import url(https://fonts.googleapis.com/css?family=Lobster|Arimo:400,700,400italic);
+
+
+
+
+
+// ***** Font Styles Go Here *****
+
+body{
+	max-width: 1400px;
+}
+h4{
+	text-align: center;
+	color: orange;
+	text-shadow: 1px 1px black;
+	font-size: 1.2em;
+	margin: 15px 0;
+}
+
+h1, h2, h3{
+
+	font-family: 'Lobster', cursive;
+
+}
+
+a, p, li, ul, nav{
+
+	font-family: 'Arimo', sans-serif;
+
+}
+
+p{
+	line-height: 2em;
+}
+
+
+
+
+
+// ***** Mixins Go Here *****
+
+@mixin navigate($color){
+
+	margin: 35px 0;
+
+
+	ul{
+		padding: 0;
+		list-style: none;
+		text-align: center;
+	}
+
+
+	li{
+		margin: 20px 0;
+	}
+
+
+	a{
+		color: $color;
+		text-decoration: none;
+	}
+
+}
+
+@mixin bignav(){
+		nav{
+		display: inline-block;
+		margin-bottom: 0px;
+		margin-top: 0px;
+
+		ul{
+			display: inline-flex;
+			justify-content: space-between;
+		}
+
+
+		li{
+			display: inline-block;
+			margin: 0px 20px;
+		}
+
+
+		a{
+			display: inline-block;
+		}
+
+	}
+}
+
+
+
+@mixin contentdiv($background, $width){
+
+	opacity: 0.8;
+	width: $width;
+	background: $background;
+	border-radius: 10px;
+	padding: 10px 20px 20px 20px;
+	margin-bottom: 30px;
+
+	img{
+		width: 65%;
+		display: block;
+		margin: 0 auto;
+	}
+
+	h3{
+		font-size: 1.6em;
+	}
+
+	a{
+		display: block;
+		text-align: right;
+		color: blue;
+
+	}
+
+}
+
+
+
+// ***** Header, Footer, and Wrapper *****
+
+
+
+header{
+
+	text-align: center;
+	margin-bottom: 50px;
+	border-bottom: 1px solid black;
+
+
+	h1{
+		text-shadow: 1px 1px #078224;
+	}
+
+	nav{
+		@include navigate(#007AB2)
+	}
+
+	img{
+		width: 25%;
+		margin-bottom: 25px;
+	}
+
+}
+
+
+footer{
+
+	border-top: 1px solid black;
+
+	section{
+		background: #4A00B2;
+		padding: 20px 0;
+
+		div{
+			color: white;
+			line-height: 2em;
+		}
+	}
+
+	nav{
+		@include navigate(#007AB2)
+	}
+
+	ul{
+		padding: 0;
+		list-style: none;
+		text-align: center;
+
+	}
+
+	.contact{
+
+		li{
+			line-height: 2.4em;
+		}
+
+		a{
+			color: white;
+		}
+	}
+
+}
+
+
+
+.wrapper{
+	width: 86%;
+	display: block;
+	margin: 0 auto;
+}
+
+
+// ***** Start Individual Styles *****
+
+
+.mitchell{
+
+	margin-bottom: 60px;
+
+	img{
+		display: block;
+		margin: 0 auto;
+		width: 100%;
+	}
+
+
+	article{
+		text-align: center;
+
+		h2, h3{
+			margin: 5px 0;
+		}
+	}
+}
+
+
+.maincontent{
+
+	@include contentdiv(white, 100);
+
+	box-shadow: 3px 3px 10px;
+
+}
+
+.pdfresume{
+
+	text-align: center;
+	margin-bottom: 15px;
+
+	a{
+		text-align: center;
+		color: blue;
+		text-decoration: none;
+		text-transform: uppercase;
+	}
+}
+
+.resume{
+
+	img{
+		width: 100%;
+	}
+}
+
+
+.socialmedia{
+
+	display: flex;
+	justify-content: space-around;
+	background: rgb(6, 0, 15);
+	padding: 15px 0;
+
+	img{
+		width: 60px;
+		height: 60px;
+	}
+
+}
+
+
+.projects{
+
+	img{
+		width: 100%;
+		display: block;
+		margin: 0 auto;
+		margin-bottom: 40px;
+
+	}
+}
+
+
+
+.cspics{
+	width: 100%;
+	margin-bottom: 40px;
+}
+
+
+
+.scope{
+
+	ul{
+		text-align: center;
+		padding: 0;
+		list-style: none;
+	}
+}
+
+.links{
+
+	text-align: center;
+	a{
+		display: block;
+		text-decoration: none;
+		margin: 10px 0;
+	}
+}
+
+
+@media screen and (min-width: 650px){
+
+	header{
+
+		h1{
+			text-align: left;
+			font-size: 1.5em;
+		}
+
+		nav{
+		
+			display: inline-block;
+			margin-bottom: 0px;
+			margin-top: 0px;
+
+			ul{
+				display: inline-flex;
+				justify-content: space-between;
+			}
+
+
+			li{
+				display: inline-block;
+				margin: 0px 20px;
+			}
+
+
+			a{
+				display: inline-block;
+			}
+
+		}
+
+		img{
+			display: none;
+		}
+
+	}
+
+
+
+	footer{
+
+		text-align: center;
+
+		nav{
+		
+			display: inline-block;
+			margin-bottom: 20px;
+			margin-top: 20px;
+
+			ul{
+				display: inline-flex;
+				justify-content: space-between;
+			}
+
+
+			li{
+				display: inline-block;
+				margin: 0px 20px;
+			}
+
+
+			a{
+				display: inline-block;
+			}
+
+		}
+	}
+
+
+	.mitchell{
+
+		text-align: center;
+
+		img{
+			display: inline-block;
+			width: 40%;
+			vertical-align: middle;
+		}
+
+		article{
+			display: inline-block;
+			vertical-align: middle;
+		}
+
+	}
+
+	.maincontent{
+
+		img{
+			width: 30%;
+		}
+	}
+
+
+	.resume{
+		display: block;
+	}
+
+
+	.projects{
+
+		img{
+			width: 60%;
+		}
+	}
+
+}
+
+@media screen and (min-width: 900px){
+
+	.container{
+		display: inline-flex;
+		justify-content: space-around;
+
+	}
+
+	.maincontent{
+		margin-left: 25px;
+		margin-right: 25px;
+	}
+
+	.socialmedia{
+		justify-content: flex-end;
+
+		a{
+			margin: 0px 25px;
+		}
+	}
+
+	.mitchell{
+
+		.fishing{
+			width: 36%;
+		}
+	}
+
+
+	.ironyard{
+
+		a{
+			display: inline-block;
+			width: 55%;
+			vertical-align: middle;
+		}
+
+		.ironinfo{
+			display: inline-block;
+			width: 40%;
+			vertical-align: middle;
+		}
+	}
+
+	.projects{
+		img{
+			width: 40%;
+		}
+	}
+
+
+	.cspics{
+		display: block;
+		width: 50%;
+		margin: 0 auto;
+	}
+
+	.scope{
+		display: inline-flex;
+		justify-content: space-around;
+		margin-bottom: 50px;
+		
+
+		article{
+			text-align: center;
+			margin: 0px 30px;
+
+		}
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,408 @@
+@import "compass";
+@import url(https://fonts.googleapis.com/css?family=Amaranth:400,700italic|Titillium+Web);
+/***** CLEARFIX is applied to the parent of floated elements *************/
+/*************************************************************************/
+
+.clearfix {
+    zoom: 1;
+    &:before, &:after {
+        content: "";
+        display: table;
+    }
+    &:after {
+        clear: both;
+    }
+}
+
+/***** SITE STYLES *************/
+/**********************************/
+
+h1, h2, a, label{
+	font-family: 'Amaranth', sans-serif;
+    color: white;
+}
+
+
+p, li{
+	font-family: 'Titillium Web', sans-serif;
+    color: white;
+}
+
+h1{
+    font-size: 1.8em;
+    // text-decoration: underline;
+    margin-bottom: 50px;
+}
+
+
+.landing{
+
+    background: url(../img/smokebg.jpg);
+
+    img{
+        display: block;
+        width: 100%;
+        margin: 0 auto;
+    }
+    
+}
+
+
+body{
+
+    background: url(../img/inkbg.jpg);
+    background-attachment: fixed;
+    
+}
+
+
+
+.wrapper{
+
+    display: block;
+    margin: 0 auto;
+    width: 95%;
+    max-width: 1100px;
+
+}
+
+
+
+header{
+
+    img{
+        width: 100%;
+        // position: fixed;
+        // top: 0;
+    }
+}
+
+
+
+footer{
+
+    text-align: center;
+
+    ul{
+        padding: 0;
+        list-style: none;
+    }
+
+    .number{
+        text-decoration: underline;
+
+        a{
+            color: #6ba5d7;
+            font-size: 1.2em;
+        }
+    }
+}
+
+
+
+
+.nav_box{
+
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 40px;
+    padding: 15px 0;
+    background: rgba(17, 14, 31, 0.7);
+    text-align: center;
+
+    @include border-radius(8px);
+
+
+    ul{
+        list-style: none;
+        padding: 0%;
+    }
+
+    li{
+        text-decoration: none;
+        font-style: 700 italic;
+        @include border-radius(5px);
+
+        :hover{
+            background: white;
+            opacity: 0.6;
+            color: black;
+        }
+    }
+
+    a{
+        font-style: bold;
+        font-size: 1.2em;
+        display: block;
+        margin-bottom: 12px;
+        text-decoration: none;
+
+    }
+
+    .number{
+
+        text-decoration: underline;
+
+        a{
+            color: #6ba5d7;
+        }
+    }
+
+}
+
+
+.content_box{
+
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+    margin-top: 40px;
+    padding: 25px 30px;
+    background: rgba(17, 14, 31, 0.7);
+
+    @include border-radius(8px);
+
+}
+
+
+
+.home{
+
+    img{
+        display: block;
+        margin-bottom: 25px;
+        margin: 0 auto;
+        width: 60%;
+    }
+
+    p{
+        font-size: 1.1em;
+        line-height: 1.6em;
+    }
+
+}
+
+
+.artists{
+
+    display: none;
+
+    img{
+        display: block;
+        margin: 0 auto;
+        margin-top: 45px;
+        margin-bottom: 45px;
+        width: 100%;
+    }
+
+    p{
+        font-size: 1.1em;
+        line-height: 1.6em;
+    }
+
+    article{
+        margin-bottom: 65px;
+    }
+
+
+}
+
+
+.contact{
+
+    display: none;
+
+    div{
+        margin-bottom: 20px;
+    }
+
+    label{
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    input, textarea{
+        color: white;
+        background: #313142;
+        width: 100%;
+        opacity: 0.9;
+        border: none;
+        border-radius: 5px;
+        box-shadow: 1px 1px 1px white;
+    }
+
+    form{
+        display: block;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .button{
+        background: none;
+        box-shadow: none;
+        text-decoration: underline;
+        text-align: left;
+    }
+
+}
+
+
+@media screen and (min-width: 480px) {
+
+    .nav_box{
+        width: 70%;
+        margin-top: 40px;
+    }
+
+}
+
+
+
+
+@media screen and (min-width: 640px) {
+
+    .nav_box{
+        width: 70%;
+        margin-top: 40px;
+    }
+
+
+
+    .artists{
+
+        img{
+            width: 60%;
+        }
+    }
+
+    .contact{
+
+        form{
+            width: 80%;
+        }
+    }
+}
+
+
+
+
+
+@media screen and (min-width: 850px) {
+
+    .nav_box{
+        display: inline-block;
+        vertical-align: top;
+        padding-left: 10px;
+        padding-right: 10px;
+        width: 20%;
+        margin-right: 5%;
+    }
+
+    .content_box{
+        display: inline-block;
+        width: 64%;
+        margin-bottom: 60px;
+
+    }
+
+    .home{
+
+        img{
+            width: 30%;
+        }
+    }
+
+
+    .shannon{
+
+        img{
+            width: 65%;
+            margin: 0;
+            margin-right: 20px;
+            float: left;
+        }
+
+    }
+
+
+
+    .chelsea, .stephanie{
+
+        display: inline-block;
+        width: 40%;
+
+        h2{
+            margin-top: 60px;
+        }
+
+    }
+
+
+
+    .chelsea{
+
+        margin-right: 9.5%;
+    }
+
+
+
+    .stephanie{
+
+        margin-left: 9.5%;
+    }
+
+    .contact{
+
+        form{
+            width: 60%;
+        }
+    }
+
+
+}
+
+
+@media screen and (min-width: 1130px){
+
+
+    .content_box{
+        width: 67%;
+    }
+
+
+    .home{
+        
+        img{
+            width: 20%;
+        }
+    }
+
+    .shannon{
+        img{
+            width: 50%;
+        }
+    }
+
+    .chelsea, .stephanie{
+
+        display: inline-block;
+        width: 40%;
+
+        h2{
+            margin-top: 90px;
+        }
+
+    }
+}
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,129 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+        <title>Site Template</title>
+        
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Place favicon.ico in the root directory -->
+        <link rel="stylesheet" href="node_modules/normalize.css/normalize.css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+
+
+
+
+         <header>
+            <img id="logo2" src="img/logoblack.svg">
+
+            <nav>
+
+                <ul>
+                    <li><a href="Profile.html">Profile</a></li>
+                    <li><a href="Projects.html">Projects</a></li>
+                    <li><a href="Billing.html">Billing</a></li>
+                    <li><a href="Landing.html">Sign Out</a></li>
+                </ul>
+
+                <div class="toggle">
+
+                    <h3>Available?</h3>
+                    <a class ="red" href="#"><img src="img/Toggle_red.png"></a>
+                    <a class ="green" href="#"><img src="img/Toggle_green.png"></a>
+
+                </div>
+
+            </nav>
+
+        </header>
+
+
+
+        <div class="container">
+
+            <h1>Billing</h1>
+
+            <div class="choice_list">
+
+                <a id="e-check" href="#">E-check</a>
+                <a id="paypal" href="#">Paypal</a>
+            
+            </div>
+             
+            <div class="check">
+
+                <h2>E-check</h2>
+                <img src="img/check.gif">
+
+                <div>
+                    <label for="routing">Routing Number</label>
+                    <input type="text" name="routing" id="routing" value="" tabindex="1" />
+                </div>
+
+                <div>
+                    <label for="account">Account Number</label>
+                    <input type="text" name="account" id="account" value="" tabindex="1" />
+                </div>
+
+                <div>
+                    <label for="name_on_account">Name On Account</label>
+                    <input type="text" name="name_on_account" id="name_on_account" value="" tabindex="1" />
+                </div>
+
+                <div>
+                    <label for="bank_name">Bank Name</label>
+                    <input type="text" name="bank_name" id="bank_name" value="" tabindex="1" />
+                </div>
+                <div>
+                    <label for="select-choice">Account Type</label>
+
+                    <select name="select-choice" id="select-choice">
+                        <option value="Choice 1"></option>
+                        <option value="Choice 2">Checking</option>
+                        <option value="Choice 3">Savings</option>
+                        <option value="Choice 4">IRA</option>
+                    </select>
+                </div>
+
+                <a href="#">Submit</a>
+
+            </div>
+
+            <div class="paypal">
+
+                <h2>Paypal</h2>
+
+                <div>
+                    <label for="paypal_email">Paypal e-mail address</label>
+                    <input type="text" name="paypal_email" id="name_on_account" value="" tabindex="1" />
+                </div>
+
+                <div>
+                    <label for="currency">Currency Type</label>
+
+                    <select name="select-choice" id="currency">
+                        <option value="Choice 1"></option>
+                        <option value="Choice 2">US Dollars</option>
+                        <option value="Choice 3">Euros</option>
+                        <option value="Choice 4">Deutsche Marks</option>
+                        <option value="Choice 5">Lira</option>
+                        <option value="Choice 6">Yen</option>
+                        <option value="Choice 7">Beads</option>
+                        <option value="Choice 8">Rocks</option>
+                    </select>
+
+                    <a class="submit" href="#">Submit</a>
+                </div>
+
+            </div>
+        </div>
+
+        <script src="node_modules/jquery/dist/jquery.min.js"></script>
+        <script src="js/script3.js"></script>
+    </body>
+</html>

@@ -1,0 +1,326 @@
+@import url(https://fonts.googleapis.com/css?family=Amaranth:400,700italic|Titillium+Web);
+/***** CLEARFIX is applied to the parent of floated elements *************/
+/*************************************************************************/
+/* line 6, ../scss/style.scss */
+.clearfix {
+  zoom: 1;
+}
+/* line 8, ../scss/style.scss */
+.clearfix:before, .clearfix:after {
+  content: "";
+  display: table;
+}
+/* line 12, ../scss/style.scss */
+.clearfix:after {
+  clear: both;
+}
+
+/***** SITE STYLES *************/
+/**********************************/
+/* line 20, ../scss/style.scss */
+h1, h2, a, label {
+  font-family: 'Amaranth', sans-serif;
+  color: white;
+}
+
+/* line 26, ../scss/style.scss */
+p, li {
+  font-family: 'Titillium Web', sans-serif;
+  color: white;
+}
+
+/* line 31, ../scss/style.scss */
+h1 {
+  font-size: 1.8em;
+  margin-bottom: 50px;
+}
+
+/* line 38, ../scss/style.scss */
+.landing {
+  background: url(../img/smokebg.jpg);
+}
+/* line 42, ../scss/style.scss */
+.landing img {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* line 51, ../scss/style.scss */
+body {
+  background: url(../img/inkbg.jpg);
+  background-attachment: fixed;
+}
+
+/* line 60, ../scss/style.scss */
+.wrapper {
+  display: block;
+  margin: 0 auto;
+  width: 95%;
+  max-width: 1100px;
+}
+
+/* line 73, ../scss/style.scss */
+header img {
+  width: 100%;
+}
+
+/* line 82, ../scss/style.scss */
+footer {
+  text-align: center;
+}
+/* line 86, ../scss/style.scss */
+footer ul {
+  padding: 0;
+  list-style: none;
+}
+/* line 91, ../scss/style.scss */
+footer .number {
+  text-decoration: underline;
+}
+/* line 94, ../scss/style.scss */
+footer .number a {
+  color: #6ba5d7;
+  font-size: 1.2em;
+}
+
+/* line 104, ../scss/style.scss */
+.nav_box {
+  display: block;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 40px;
+  padding: 15px 0;
+  background: rgba(17, 14, 31, 0.7);
+  text-align: center;
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
+  border-radius: 8px;
+}
+/* line 117, ../scss/style.scss */
+.nav_box ul {
+  list-style: none;
+  padding: 0%;
+}
+/* line 122, ../scss/style.scss */
+.nav_box li {
+  text-decoration: none;
+  font-style: 700 italic;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
+/* line 127, ../scss/style.scss */
+.nav_box li :hover {
+  background: white;
+  opacity: 0.6;
+  color: black;
+}
+/* line 134, ../scss/style.scss */
+.nav_box a {
+  font-style: bold;
+  font-size: 1.2em;
+  display: block;
+  margin-bottom: 12px;
+  text-decoration: none;
+}
+/* line 143, ../scss/style.scss */
+.nav_box .number {
+  text-decoration: underline;
+}
+/* line 147, ../scss/style.scss */
+.nav_box .number a {
+  color: #6ba5d7;
+}
+
+/* line 155, ../scss/style.scss */
+.content_box {
+  display: block;
+  margin: 0 auto;
+  width: 80%;
+  margin-top: 40px;
+  padding: 25px 30px;
+  background: rgba(17, 14, 31, 0.7);
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
+  border-radius: 8px;
+}
+
+/* line 172, ../scss/style.scss */
+.home img {
+  display: block;
+  margin-bottom: 25px;
+  margin: 0 auto;
+  width: 60%;
+}
+/* line 179, ../scss/style.scss */
+.home p {
+  font-size: 1.1em;
+  line-height: 1.6em;
+}
+
+/* line 187, ../scss/style.scss */
+.artists {
+  display: none;
+}
+/* line 191, ../scss/style.scss */
+.artists img {
+  display: block;
+  margin: 0 auto;
+  margin-top: 45px;
+  margin-bottom: 45px;
+  width: 100%;
+}
+/* line 199, ../scss/style.scss */
+.artists p {
+  font-size: 1.1em;
+  line-height: 1.6em;
+}
+/* line 204, ../scss/style.scss */
+.artists article {
+  margin-bottom: 65px;
+}
+
+/* line 212, ../scss/style.scss */
+.contact {
+  display: none;
+}
+/* line 216, ../scss/style.scss */
+.contact div {
+  margin-bottom: 20px;
+}
+/* line 220, ../scss/style.scss */
+.contact label {
+  display: block;
+  margin-bottom: 10px;
+}
+/* line 225, ../scss/style.scss */
+.contact input, .contact textarea {
+  color: white;
+  background: #313142;
+  width: 100%;
+  opacity: 0.9;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 1px 1px 1px white;
+}
+/* line 235, ../scss/style.scss */
+.contact form {
+  display: block;
+  width: 90%;
+  margin: 0 auto;
+}
+/* line 241, ../scss/style.scss */
+.contact .button {
+  background: none;
+  box-shadow: none;
+  text-decoration: underline;
+  text-align: left;
+}
+
+@media screen and (min-width: 480px) {
+  /* line 253, ../scss/style.scss */
+  .nav_box {
+    width: 70%;
+    margin-top: 40px;
+  }
+}
+@media screen and (min-width: 640px) {
+  /* line 265, ../scss/style.scss */
+  .nav_box {
+    width: 70%;
+    margin-top: 40px;
+  }
+
+  /* line 274, ../scss/style.scss */
+  .artists img {
+    width: 60%;
+  }
+
+  /* line 281, ../scss/style.scss */
+  .contact form {
+    width: 80%;
+  }
+}
+@media screen and (min-width: 850px) {
+  /* line 293, ../scss/style.scss */
+  .nav_box {
+    display: inline-block;
+    vertical-align: top;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 20%;
+    margin-right: 5%;
+  }
+
+  /* line 302, ../scss/style.scss */
+  .content_box {
+    display: inline-block;
+    width: 64%;
+    margin-bottom: 60px;
+  }
+
+  /* line 311, ../scss/style.scss */
+  .home img {
+    width: 30%;
+  }
+
+  /* line 319, ../scss/style.scss */
+  .shannon img {
+    width: 65%;
+    margin: 0;
+    margin-right: 20px;
+    float: left;
+  }
+
+  /* line 330, ../scss/style.scss */
+  .chelsea, .stephanie {
+    display: inline-block;
+    width: 40%;
+  }
+  /* line 335, ../scss/style.scss */
+  .chelsea h2, .stephanie h2 {
+    margin-top: 60px;
+  }
+
+  /* line 343, ../scss/style.scss */
+  .chelsea {
+    margin-right: 9.5%;
+  }
+
+  /* line 350, ../scss/style.scss */
+  .stephanie {
+    margin-left: 9.5%;
+  }
+
+  /* line 357, ../scss/style.scss */
+  .contact form {
+    width: 60%;
+  }
+}
+@media screen and (min-width: 1130px) {
+  /* line 369, ../scss/style.scss */
+  .content_box {
+    width: 67%;
+  }
+
+  /* line 376, ../scss/style.scss */
+  .home img {
+    width: 20%;
+  }
+
+  /* line 382, ../scss/style.scss */
+  .shannon img {
+    width: 50%;
+  }
+
+  /* line 387, ../scss/style.scss */
+  .chelsea, .stephanie {
+    display: inline-block;
+    width: 40%;
+  }
+  /* line 392, ../scss/style.scss */
+  .chelsea h2, .stephanie h2 {
+    margin-top: 90px;
+  }
+}

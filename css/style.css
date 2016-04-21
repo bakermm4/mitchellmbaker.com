@@ -1,0 +1,380 @@
+@import url(https://fonts.googleapis.com/css?family=Lobster|Arimo:400,700,400italic);
+/* line 13, ../scss/style.scss */
+body {
+  max-width: 1400px;
+}
+
+/* line 16, ../scss/style.scss */
+h4 {
+  text-align: center;
+  color: orange;
+  text-shadow: 1px 1px black;
+  font-size: 1.2em;
+  margin: 15px 0;
+}
+
+/* line 24, ../scss/style.scss */
+h1, h2, h3 {
+  font-family: 'Lobster', cursive;
+}
+
+/* line 30, ../scss/style.scss */
+a, p, li, ul, nav {
+  font-family: 'Arimo', sans-serif;
+}
+
+/* line 36, ../scss/style.scss */
+p {
+  line-height: 2em;
+}
+
+/* line 131, ../scss/style.scss */
+header {
+  text-align: center;
+  margin-bottom: 50px;
+  border-bottom: 1px solid black;
+}
+/* line 138, ../scss/style.scss */
+header h1 {
+  text-shadow: 1px 1px #078224;
+}
+/* line 142, ../scss/style.scss */
+header nav {
+  margin: 35px 0;
+}
+/* line 51, ../scss/style.scss */
+header nav ul {
+  padding: 0;
+  list-style: none;
+  text-align: center;
+}
+/* line 58, ../scss/style.scss */
+header nav li {
+  margin: 20px 0;
+}
+/* line 63, ../scss/style.scss */
+header nav a {
+  color: #007AB2;
+  text-decoration: none;
+}
+/* line 146, ../scss/style.scss */
+header img {
+  width: 25%;
+  margin-bottom: 25px;
+}
+
+/* line 154, ../scss/style.scss */
+footer {
+  border-top: 1px solid black;
+}
+/* line 158, ../scss/style.scss */
+footer section {
+  background: #4A00B2;
+  padding: 20px 0;
+}
+/* line 162, ../scss/style.scss */
+footer section div {
+  color: white;
+  line-height: 2em;
+}
+/* line 168, ../scss/style.scss */
+footer nav {
+  margin: 35px 0;
+}
+/* line 51, ../scss/style.scss */
+footer nav ul {
+  padding: 0;
+  list-style: none;
+  text-align: center;
+}
+/* line 58, ../scss/style.scss */
+footer nav li {
+  margin: 20px 0;
+}
+/* line 63, ../scss/style.scss */
+footer nav a {
+  color: #007AB2;
+  text-decoration: none;
+}
+/* line 172, ../scss/style.scss */
+footer ul {
+  padding: 0;
+  list-style: none;
+  text-align: center;
+}
+/* line 181, ../scss/style.scss */
+footer .contact li {
+  line-height: 2.4em;
+}
+/* line 185, ../scss/style.scss */
+footer .contact a {
+  color: white;
+}
+
+/* line 194, ../scss/style.scss */
+.wrapper {
+  width: 86%;
+  display: block;
+  margin: 0 auto;
+}
+
+/* line 204, ../scss/style.scss */
+.mitchell {
+  margin-bottom: 60px;
+}
+/* line 208, ../scss/style.scss */
+.mitchell img {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+}
+/* line 215, ../scss/style.scss */
+.mitchell article {
+  text-align: center;
+}
+/* line 218, ../scss/style.scss */
+.mitchell article h2, .mitchell article h3 {
+  margin: 5px 0;
+}
+
+/* line 225, ../scss/style.scss */
+.maincontent {
+  opacity: 0.8;
+  width: 100;
+  background: white;
+  border-radius: 10px;
+  padding: 10px 20px 20px 20px;
+  margin-bottom: 30px;
+  box-shadow: 3px 3px 10px;
+}
+/* line 106, ../scss/style.scss */
+.maincontent img {
+  width: 65%;
+  display: block;
+  margin: 0 auto;
+}
+/* line 112, ../scss/style.scss */
+.maincontent h3 {
+  font-size: 1.6em;
+}
+/* line 116, ../scss/style.scss */
+.maincontent a {
+  display: block;
+  text-align: right;
+  color: blue;
+}
+
+/* line 233, ../scss/style.scss */
+.pdfresume {
+  text-align: center;
+  margin-bottom: 15px;
+}
+/* line 238, ../scss/style.scss */
+.pdfresume a {
+  text-align: center;
+  color: blue;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+/* line 248, ../scss/style.scss */
+.resume img {
+  width: 100%;
+}
+
+/* line 254, ../scss/style.scss */
+.socialmedia {
+  display: flex;
+  justify-content: space-around;
+  background: #06000f;
+  padding: 15px 0;
+}
+/* line 261, ../scss/style.scss */
+.socialmedia img {
+  width: 60px;
+  height: 60px;
+}
+
+/* line 271, ../scss/style.scss */
+.projects img {
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
+
+/* line 282, ../scss/style.scss */
+.cspics {
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+/* line 291, ../scss/style.scss */
+.scope ul {
+  text-align: center;
+  padding: 0;
+  list-style: none;
+}
+
+/* line 298, ../scss/style.scss */
+.links {
+  text-align: center;
+}
+/* line 301, ../scss/style.scss */
+.links a {
+  display: block;
+  text-decoration: none;
+  margin: 10px 0;
+}
+
+@media screen and (min-width: 650px) {
+  /* line 313, ../scss/style.scss */
+  header h1 {
+    text-align: left;
+    font-size: 1.5em;
+  }
+  /* line 318, ../scss/style.scss */
+  header nav {
+    display: inline-block;
+    margin-bottom: 0px;
+    margin-top: 0px;
+  }
+  /* line 324, ../scss/style.scss */
+  header nav ul {
+    display: inline-flex;
+    justify-content: space-between;
+  }
+  /* line 330, ../scss/style.scss */
+  header nav li {
+    display: inline-block;
+    margin: 0px 20px;
+  }
+  /* line 336, ../scss/style.scss */
+  header nav a {
+    display: inline-block;
+  }
+  /* line 342, ../scss/style.scss */
+  header img {
+    display: none;
+  }
+
+  /* line 350, ../scss/style.scss */
+  footer {
+    text-align: center;
+  }
+  /* line 354, ../scss/style.scss */
+  footer nav {
+    display: inline-block;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+  /* line 360, ../scss/style.scss */
+  footer nav ul {
+    display: inline-flex;
+    justify-content: space-between;
+  }
+  /* line 366, ../scss/style.scss */
+  footer nav li {
+    display: inline-block;
+    margin: 0px 20px;
+  }
+  /* line 372, ../scss/style.scss */
+  footer nav a {
+    display: inline-block;
+  }
+
+  /* line 380, ../scss/style.scss */
+  .mitchell {
+    text-align: center;
+  }
+  /* line 384, ../scss/style.scss */
+  .mitchell img {
+    display: inline-block;
+    width: 40%;
+    vertical-align: middle;
+  }
+  /* line 390, ../scss/style.scss */
+  .mitchell article {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  /* line 399, ../scss/style.scss */
+  .maincontent img {
+    width: 30%;
+  }
+
+  /* line 405, ../scss/style.scss */
+  .resume {
+    display: block;
+  }
+
+  /* line 412, ../scss/style.scss */
+  .projects img {
+    width: 60%;
+  }
+}
+@media screen and (min-width: 900px) {
+  /* line 421, ../scss/style.scss */
+  .container {
+    display: inline-flex;
+    justify-content: space-around;
+  }
+
+  /* line 427, ../scss/style.scss */
+  .maincontent {
+    margin-left: 25px;
+    margin-right: 25px;
+  }
+
+  /* line 432, ../scss/style.scss */
+  .socialmedia {
+    justify-content: flex-end;
+  }
+  /* line 435, ../scss/style.scss */
+  .socialmedia a {
+    margin: 0px 25px;
+  }
+
+  /* line 442, ../scss/style.scss */
+  .mitchell .fishing {
+    width: 36%;
+  }
+
+  /* line 450, ../scss/style.scss */
+  .ironyard a {
+    display: inline-block;
+    width: 55%;
+    vertical-align: middle;
+  }
+  /* line 456, ../scss/style.scss */
+  .ironyard .ironinfo {
+    display: inline-block;
+    width: 40%;
+    vertical-align: middle;
+  }
+
+  /* line 464, ../scss/style.scss */
+  .projects img {
+    width: 40%;
+  }
+
+  /* line 470, ../scss/style.scss */
+  .cspics {
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+  }
+
+  /* line 476, ../scss/style.scss */
+  .scope {
+    display: inline-flex;
+    justify-content: space-around;
+    margin-bottom: 50px;
+  }
+  /* line 482, ../scss/style.scss */
+  .scope article {
+    text-align: center;
+    margin: 0px 30px;
+  }
+}

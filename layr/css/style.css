@@ -1,0 +1,470 @@
+@import url(https://fonts.googleapis.com/css?family=Fjalla+One|Cantarell:400,700,400italic);
+/***** CLEARFIX is applied to the parent of floated elements *************/
+/*************************************************************************/
+/* line 7, ../scss/style.scss */
+.clearfix {
+  zoom: 1;
+}
+/* line 9, ../scss/style.scss */
+.clearfix:before, .clearfix:after {
+  content: "";
+  display: table;
+}
+/* line 13, ../scss/style.scss */
+.clearfix:after {
+  clear: both;
+}
+
+/***** SITE STYLES *************/
+/**********************************/
+/* line 25, ../scss/style.scss */
+h1, h2, h3 {
+  font-family: 'Fjalla One', sans-serif;
+}
+
+/* line 29, ../scss/style.scss */
+h1 {
+  color: white;
+  display: block;
+  margin-top: 40px;
+  margin-left: 15px;
+}
+
+/* line 36, ../scss/style.scss */
+h3 {
+  font-weight: normal;
+  font-size: 0.9em;
+}
+
+/* line 41, ../scss/style.scss */
+p, a, li {
+  font-family: 'Cantarell', sans-serif;
+}
+
+/* line 45, ../scss/style.scss */
+a {
+  color: #5db5b2;
+  display: block;
+}
+
+/* line 51, ../scss/style.scss */
+body {
+  background-image: url(../img/landing.png);
+  background-repeat: cover;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+/* line 58, ../scss/style.scss */
+#logo {
+  display: block;
+  margin: 0 auto;
+  vertical-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  width: 60%;
+}
+
+/* line 67, ../scss/style.scss */
+#logo2 {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 10%;
+  width: 50%;
+}
+
+/* line 74, ../scss/style.scss */
+form {
+  text-align: center;
+}
+/* line 77, ../scss/style.scss */
+form input {
+  margin: 20px 0;
+  padding: 5px 10px;
+  width: 65%;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
+  opacity: 0.5;
+}
+
+/* line 87, ../scss/style.scss */
+.login_buttons a {
+  color: #5db5b2;
+  display: block;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* line 96, ../scss/style.scss */
+header {
+  padding: 25px 0;
+  margin-bottom: 25px;
+  background: white;
+}
+/* line 101, ../scss/style.scss */
+header nav {
+  display: block;
+  text-align: center;
+}
+/* line 106, ../scss/style.scss */
+header ul {
+  padding: 0;
+  list-style: none;
+}
+/* line 111, ../scss/style.scss */
+header li {
+  margin-bottom: 20px;
+}
+/* line 115, ../scss/style.scss */
+header a {
+  text-decoration: none;
+  color: #ff3700;
+  font-size: 1.1em;
+}
+
+/* line 126, ../scss/style.scss */
+.toggle .red img, .toggle .green img {
+  width: 20%;
+}
+
+/* line 141, ../scss/style.scss */
+.content, .available, .current, .history {
+  background: #ededed;
+  padding: 40px 40px;
+}
+/* line 146, ../scss/style.scss */
+.content h3, .available h3, .current h3, .history h3 {
+  font-size: 1.3em;
+  margin-top: 30px;
+}
+/* line 151, ../scss/style.scss */
+.content h4, .available h4, .current h4, .history h4 {
+  margin: 30px 0px 10px 0px;
+}
+/* line 155, ../scss/style.scss */
+.content p, .available p, .current p, .history p {
+  margin: 0 0 15px 0;
+}
+/* line 159, ../scss/style.scss */
+.content img, .available img, .current img, .history img {
+  display: block;
+  margin: 0 auto;
+}
+/* line 164, ../scss/style.scss */
+.content ul, .available ul, .current ul, .history ul {
+  padding: 0;
+  margin-bottom: 40px;
+  list-style: none;
+}
+/* line 170, ../scss/style.scss */
+.content li, .available li, .current li, .history li {
+  list-style: none;
+  margin-bottom: 10px;
+}
+/* line 176, ../scss/style.scss */
+.content a, .available a, .current a, .history a {
+  display: block;
+  color: #5db5b2;
+}
+/* line 181, ../scss/style.scss */
+.content #edit, .available #edit, .current #edit, .history #edit {
+  display: block;
+  text-align: right;
+  margin-top: 18px;
+}
+/* line 186, ../scss/style.scss */
+.content .deets, .available .deets, .current .deets, .history .deets {
+  display: block;
+  margin-top: 35px;
+}
+
+/* line 195, ../scss/style.scss */
+.choice_list, .choice_list2 {
+  padding: 0px 10px;
+  list-style: none;
+}
+/* line 199, ../scss/style.scss */
+.choice_list li, .choice_list2 li {
+  margin: 13px 0;
+}
+
+/* line 204, ../scss/style.scss */
+.check, .paypal {
+  background: #ededed;
+  padding: 5% 5%;
+}
+/* line 207, ../scss/style.scss */
+.check img, .paypal img {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  margin-bottom: 10%;
+}
+/* line 214, ../scss/style.scss */
+.check label, .paypal label {
+  display: block;
+  margin-bottom: 7px;
+}
+/* line 219, ../scss/style.scss */
+.check input, .check select, .paypal input, .paypal select {
+  display: block;
+  width: 80%;
+  margin-bottom: 20px;
+}
+
+/* line 227, ../scss/style.scss */
+#e-check, #paypal {
+  margin-bottom: 15px;
+  margin-left: 10px;
+}
+
+@media screen and (min-width: 500px) {
+  /* line 237, ../scss/style.scss */
+  #logo {
+    width: 35%;
+    margin-bottom: 15px;
+  }
+
+  /* line 243, ../scss/style.scss */
+  form input {
+    width: 45%;
+  }
+
+  /* line 248, ../scss/style.scss */
+  #logo2 {
+    width: 12%;
+    margin: 0 10px;
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  /* line 255, ../scss/style.scss */
+  header {
+    padding: 10px 15px;
+    margin-bottom: 0;
+  }
+  /* line 259, ../scss/style.scss */
+  header nav {
+    display: inline-block;
+    width: 80%;
+    vertical-align: middle;
+    text-align: right;
+  }
+  /* line 266, ../scss/style.scss */
+  header ul {
+    padding: 0;
+    list-style: none;
+    vertical-align: middle;
+    display: inline-block;
+  }
+  /* line 273, ../scss/style.scss */
+  header li {
+    display: inline-block;
+    border-right: 1px solid black;
+    vertical-align: middle;
+    margin-bottom: 0%;
+  }
+  /* line 280, ../scss/style.scss */
+  header a {
+    display: inline-block;
+    font-size: 0.2em;
+    padding-right: 15px;
+    padding-left: 15px;
+    text-decoration: none;
+    text-align: right;
+    color: #ff3700;
+    font-size: 0.8em;
+  }
+
+  /* line 292, ../scss/style.scss */
+  .toggle {
+    display: inline-block;
+    width: 16%;
+  }
+  /* line 297, ../scss/style.scss */
+  .toggle h3 {
+    font-size: 0.7em;
+    display: inline-block;
+    vertical-align: middle;
+  }
+  /* line 303, ../scss/style.scss */
+  .toggle .red, .toggle .green {
+    padding: 0;
+    width: 15%;
+    display: inline-block;
+    vertical-align: middle;
+  }
+  /* line 309, ../scss/style.scss */
+  .toggle .red img, .toggle .green img {
+    width: 300%;
+    vertical-align: middle;
+  }
+
+  /* line 319, ../scss/style.scss */
+  .content img {
+    margin: 0;
+    margin: 15px 0;
+  }
+
+  /* line 325, ../scss/style.scss */
+  .check img {
+    width: 60%;
+  }
+}
+@media screen and (min-width: 850px) {
+  /* line 340, ../scss/style.scss */
+  #logo {
+    margin-top: 80px;
+    margin-bottom: 60px;
+    width: 15%;
+  }
+
+  /* line 347, ../scss/style.scss */
+  #logo2 {
+    width: 7%;
+    margin: 0 10px;
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  /* line 354, ../scss/style.scss */
+  form input {
+    width: 30%;
+  }
+
+  /* line 359, ../scss/style.scss */
+  .login_buttons a {
+    margin-bottom: 2%;
+  }
+
+  /* line 364, ../scss/style.scss */
+  header {
+    padding: 10px 15px;
+    margin-bottom: 0;
+  }
+  /* line 368, ../scss/style.scss */
+  header nav {
+    display: inline-block;
+    width: 80%;
+    vertical-align: middle;
+    text-align: right;
+  }
+  /* line 375, ../scss/style.scss */
+  header ul {
+    padding: 0;
+    list-style: none;
+    vertical-align: middle;
+  }
+  /* line 381, ../scss/style.scss */
+  header li {
+    display: inline-block;
+    border-right: 1px solid black;
+    vertical-align: middle;
+    margin-bottom: 0%;
+  }
+  /* line 388, ../scss/style.scss */
+  header a {
+    display: inline-block;
+    font-size: 0.2em;
+    padding-right: 15px;
+    padding-left: 15px;
+    text-decoration: none;
+    text-align: right;
+    color: #ff3700;
+    font-size: 1.1em;
+  }
+
+  /* line 402, ../scss/style.scss */
+  .toggle h3 {
+    font-size: 1.1em;
+  }
+
+  /* line 408, ../scss/style.scss */
+  .container {
+    width: 82%;
+    margin-left: 18%;
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+  }
+  /* line 415, ../scss/style.scss */
+  .container h1 {
+    margin: 20px 0;
+  }
+  /* line 419, ../scss/style.scss */
+  .container .choice_list {
+    position: absolute;
+    left: -150px;
+  }
+
+  /* line 429, ../scss/style.scss */
+  .content p {
+    display: block;
+  }
+  /* line 432, ../scss/style.scss */
+  .content img {
+    margin: 0;
+    width: 21%;
+    display: inline-block;
+    padding-left: 40px;
+    vertical-align: top;
+  }
+  /* line 440, ../scss/style.scss */
+  .content .list_one, .content .list_two {
+    display: inline-block;
+    padding-left: 40px;
+    vertical-align: top;
+    margin: 0 0;
+  }
+  /* line 446, ../scss/style.scss */
+  .content .list_one li, .content .list_two li {
+    margin-bottom: 10px;
+  }
+  /* line 451, ../scss/style.scss */
+  .content .portfolio {
+    margin-left: 32%;
+    display: inline-block;
+  }
+  /* line 456, ../scss/style.scss */
+  .content #edit {
+    display: inline-block;
+    margin-left: 40%;
+    margin-bottom: 13%;
+  }
+
+  /* line 465, ../scss/style.scss */
+  .current article, .available article, .history article {
+    display: inline-block;
+    width: 22%;
+    vertical-align: top;
+  }
+  /* line 472, ../scss/style.scss */
+  .current aside, .available aside, .history aside {
+    display: inline-block;
+    width: 37%;
+    vertical-align: top;
+    border-left: 1px solid black;
+    padding: 0px 20%;
+  }
+
+  /* line 482, ../scss/style.scss */
+  .submit {
+    display: block;
+    margin-bottom: 15%;
+  }
+
+  /* line 487, ../scss/style.scss */
+  .check, .paypal {
+    padding: 5% 10%;
+  }
+  /* line 490, ../scss/style.scss */
+  .check img, .paypal img {
+    margin: 20px 0;
+  }
+  /* line 493, ../scss/style.scss */
+  .check input, .check select, .paypal input, .paypal select {
+    width: 40%;
+  }
+}
